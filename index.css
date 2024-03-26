@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.navbarlinks{
+    display: flex;
+    column-gap: 20px;
+}
+.navbarlinks a{
+    text-decoration: none;
+    color:blue;
+}
+.navbarlinks a:hover{
+    text-decoration: underline;
+    color: pink;
+}
+.navbartoggle{
+    display: none;
+}
+/*side navbar*/
+.sidenavbar{
+    background-color:midnightblue;
+    color: white;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    transition: 2s;
+}
+.sidenavbarlink{
+    margin-bottom: 30px;
+}
+.sidenavbarlinks a{
+    text-decoration: none;
+    color:azure;
+    
+}
+.sidenavbarlinks a:hover{
+    text-decoration: underline;
+    color:aqua;
+    
+}
+/*header*/
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.headerbutton{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+.headerimg{
+    display: block;
+    justify-content: center;
+}
+.service{
+    padding: 20px;
+}
+
+.servicecontainer-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.servicecontainer-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.servicecontainer-2 div{
+    background-color: darkgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+.newarrival{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.newarrivalcontainer{
+    position: relative;
+    flex-basis: 20%;
+    margin-top: 20px;
+    margin-right: 10px;
+    
+}
+
+.newarrivalbutton{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    color: rgb(9, 11, 11);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border-radius: 10px;
+    border: none;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.productsection{
+    margin-top: 20px;
+}
+.productsearch{
+    width: 80%;
+    border: solid black 3px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.productsearch input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+
+}
+.productsearch input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productsbox{
+    text-align: center;
+   
+    flex-basis: 20%;
+}
+
+.productsbox img{
+    border-radius: 20px;
+}
+.contact{
+    padding: 20px;
+    margin-left: 550px;
+    background-color:midnightblue;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 500px;
+    width: 400px;
+    border-radius: 50px;
+
+}
+.contactus{padding: 10px;
+
+}
+.textbox{
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+
+}
+
+.textbox1{
+    height: 150px;
+    width: 350px;
+    border-radius: 10px;
+
+}
+.contactbutton{
+    margin-top: 10px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 150px;
+}
+.footer{
+    padding: 20px;
+    margin: 10px;
+    background-color:midnightblue;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+/*media query*/
+@media screen and (max-width:600px) {
+    .navbartoggle{
+        display:block
+    }
+    .navbarlinks{
+        display: none;
+    }
+    .headerimg{
+        display: none;
+    }
+    .servicecontainer-1{
+        display: none;
+    }
+    .servicecontainer-2{
+        flex-direction: column;
+    }
+}
